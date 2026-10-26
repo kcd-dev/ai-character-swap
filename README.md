@@ -4,11 +4,23 @@
 
 一个 Claude Skill：设计原创角色、生成设定图、调用 Seedance 2.5 换人、自动做对比视频、顺手写好发布文案。
 
+仓库地址：
+
+```bash
+git clone git@github.com:kcd-dev/ai-character-swap.git
+```
+
+或 HTTPS：
+
+```bash
+git clone https://github.com/kcd-dev/ai-character-swap.git
+```
+
 ![原视频 vs AI 换人后](examples/demo.gif)
 
 ▶️ [完整对比视频（15 秒，带原声）](examples/wen-xiansheng-compare.mp4)
 
-> 示例角色"闻先生"：明朝书生的脑袋，打工人的身子。巨大的发髻横插玉簪，大两号的西装，白袜配拖鞋。原视频里的拳手被换掉了，动作一帧没改。
+> 示例角色「闻先生」：明朝书生的脑袋，打工人的身子。巨大的发髻横插玉簪，大两号的西装，白袜配拖鞋。原视频里的拳手被换掉了，动作一帧没改。
 
 ---
 
@@ -33,13 +45,14 @@
 
 ## 怎么用
 
-**不会写代码**：直接看 [新手说明](新手说明.md) 的"做法一：网页版"，用 ChatGPT 加 Seedance 网页版就能做。
+**不会写代码**：直接看 [新手说明](新手说明.md) 的「做法一：网页版」，用 ChatGPT 加 Seedance 网页版就能做。
 
 **交给 Claude 自动跑**：
-1. 安装 ffmpeg（Mac：`brew install ffmpeg`；Windows：`winget install ffmpeg`）
-2. 开通 Seedance 2.5 API，创建 API Key，设置环境变量 `ARK_API_KEY`
-3. 把 `skills/ai-character-swap/` 添加为 Claude 的 Skill
-4. 在自己的电脑上，把角色图和要换的视频发给 Claude，说"用 XX 换掉视频里的那个人"
+1. 克隆本仓库：`git clone git@github.com:kcd-dev/ai-character-swap.git`
+2. 安装 ffmpeg（Mac：`brew install ffmpeg`；Windows：`winget install ffmpeg`）
+3. 开通 Seedance 2.5 API，创建 API Key，设置环境变量 `ARK_API_KEY`
+4. 把 `skills/ai-character-swap/` 添加为 Claude 的 Skill
+5. 在自己的电脑上，把角色图和要换的视频发给 Claude，说「用 XX 换掉视频里的那个人」
 
 ## 两条底线
 
