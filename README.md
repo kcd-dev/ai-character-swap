@@ -64,6 +64,3 @@ git clone https://github.com/kcd-dev/ai-character-swap.git
 - 视频检查、提示词生成、对比视频这几步已经用示例素材测试通过
 - API 调用部分的请求格式依据 BytePlus 官方给 ComfyUI 的 Seedance 2.5 接入代码整理，第一次使用请先 `--dry-run`，再拿一条短视频试跑。遇到问题欢迎提 Issue
 
----
-
-作者：[@DDJCXX 硅基废话](https://x.com/DDJCXX)
